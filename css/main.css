@@ -97,14 +97,58 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+ color: #293540;
+ background: url("../img/materiel-sportif-assombri.jpg") fixed center;
+
+}
+
+h2 {
+}
 
 
+.navbar, footer {
+  background-color: #293540;
+}
 
+.navbar-dark .navbar-brand, footer, footer a, .navbar-dark .navbar-nav .nav-link {
+  color: white;
+  transition: 0.3s ease;
+}
 
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link:hover, footer p, footer a {
+  color: #7cbce2;
+}
 
+header > div:last-child {
+  height: 100vh;
+  background: url("../img/running-woman.jpg");
+  background-size: 100%;
+  background-position: top;
+}
 
+main section {
+  background: rgb(225, 235, 245, 0.9);
+  /*color: white;
+  background:  rgb(252, 86, 31, 0.9);*/
+}
 
+footer p, footer a {
+  font-size: 0.8rem;
+}
 
+footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .nav-link:active, .navbar-dark .navbar-nav .nav-link:active, footer a:active {
+  text-decoration: none;
+  color: #fc561f;
+}
+
+.reseau a {
+  font-size: 40px;
+}
+
+.bordersep {
+  border-top: 5px solid #fc561f !important;
+}
 
 
 
