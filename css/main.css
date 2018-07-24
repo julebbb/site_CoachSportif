@@ -145,7 +145,11 @@ main {
   overflow: hidden;
 }
 
-main section {
+main h2, main h3 {
+  color: #fc561f;
+}
+
+main > section, main .row {
   background: rgb(225, 235, 245, 0.9);
 }
 
@@ -156,12 +160,44 @@ main section {
 
 .btn {
   background: #fc561f;
-  color: #7cbce2;
+  color: white;
+  max-width: 200px;
+  margin: auto;
+}
+
+.btn:hover {
+  background: white;
+  color: #fc561f;
+
 }
 
 iframe {
-  height: 55vh;
+  height: 70vh;
 }
+
+.main {
+  max-width: 850px;
+  margin: auto;
+}
+
+.main .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+#map {
+  margin: auto;
+  width:80%;
+  max-width: 800px;
+  min-width: 290px;
+  position: relative;
+  height: 50vh;
+}
+
+
 
 /*==========================================
                 Footer
@@ -184,6 +220,12 @@ footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .n
   border-top: 5px solid #fc561f !important;
 }
 
+footer .row {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+}
+
 /*==========================================
                 Responsive
 ============================================*/
@@ -198,13 +240,26 @@ footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .n
  }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) {
+  .reseau {
+    padding-top: 1.1rem;
+  }
+
+  .main .row section:nth-child(2) {
+   margin-top: 48px;
+  }
+
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { ... }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1000px;
+  }
+ }
 
 
 
