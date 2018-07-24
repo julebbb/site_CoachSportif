@@ -100,15 +100,24 @@ textarea {
 body {
  color: #293540;
  background: url("../img/materiel-sportif-assombri.jpg") fixed center;
-
+ background-size: 100%;
 }
 
-h2 {
+/*==========================================
+                Header
+============================================*/
+
+.header {
+  height: 100vh;
 }
 
 
 .navbar, footer {
   background-color: #293540;
+}
+
+.navbar {
+  z-index: 999;
 }
 
 .navbar-dark .navbar-brand, footer, footer a, .navbar-dark .navbar-nav .nav-link {
@@ -120,18 +129,43 @@ h2 {
   color: #7cbce2;
 }
 
-header > div:last-child {
+header > div:last-child img {
+  margin: auto;
+  display: block;
+  height: 100%;
+}
+
+header > div:last-child  {
   height: 100vh;
-  background: url("../img/running-woman.jpg");
-  background-size: 100%;
-  background-position: top;
+  overflow: hidden;
+
+}
+
+main {
+  overflow: hidden;
 }
 
 main section {
   background: rgb(225, 235, 245, 0.9);
-  /*color: white;
-  background:  rgb(252, 86, 31, 0.9);*/
 }
+
+
+/*==========================================
+                Contact page
+============================================*/
+
+.btn {
+  background: #fc561f;
+  color: #7cbce2;
+}
+
+iframe {
+  height: 55vh;
+}
+
+/*==========================================
+                Footer
+============================================*/
 
 footer p, footer a {
   font-size: 0.8rem;
@@ -150,8 +184,27 @@ footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .n
   border-top: 5px solid #fc561f !important;
 }
 
+/*==========================================
+                Responsive
+============================================*/
 
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  main > div section:first-child {
+    padding-bottom: 10px;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
 
 
 
