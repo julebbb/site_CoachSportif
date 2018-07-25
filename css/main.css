@@ -141,8 +141,14 @@ header > div:last-child img {
 header > div:last-child  {
   height: 100vh;
   overflow: hidden;
-
+  background: url("../img/dumbell.jpg") no-repeat;
+  background-position: left;
+  background-size: 100vw;
 }
+
+/*==========================================
+                Main page
+============================================*/
 
 main {
   overflow: hidden;
@@ -155,6 +161,19 @@ main h2, main h3 {
 main > section, main .row {
   background: rgb(225, 235, 245, 0.9);
 }
+
+/*==========================================
+                Index page
+============================================*/
+
+.carousel-inner {
+  height: 100vh;
+}
+
+/*==========================================
+                Coach page
+============================================*/
+
 
 .items {
   max-width: 500px;
