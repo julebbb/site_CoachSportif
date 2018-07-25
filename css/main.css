@@ -156,11 +156,25 @@ main > section, main .row {
   background: rgb(225, 235, 245, 0.9);
 }
 
+.items {
+  max-width: 500px;
+
+}
 
 .list-group-item {
   list-style-type: disclosure-closed;
   list-style-position: inside;
   display: list-item;
+  background: none;
+}
+
+.diploma {
+  padding-top: 16px;
+}
+
+.coach {
+  max-width: 320px;
+  align-self: center;
 }
 /*==========================================
                 Price page
