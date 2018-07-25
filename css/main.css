@@ -156,6 +156,26 @@ main > section, main .row {
   background: rgb(225, 235, 245, 0.9);
 }
 
+/*==========================================
+                Price page
+============================================*/
+
+.table th, .table td{
+ height: 20vh;
+ border-top: 3px solid #fc561f;
+}
+
+.table th, .table td, .table thead th {
+  vertical-align: middle;
+
+}
+.widthTable {
+  max-width: 700px;
+}
+
+.table thead tr, .table tbody tr th {
+  background: rgb(225, 235, 245, 0.9);
+}
 
 /*==========================================
                 Contact page
@@ -214,7 +234,7 @@ footer address div a:hover , footer a em:hover {
 
 }
 
-footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .nav-link:active, .navbar-dark .navbar-nav .nav-link:active, footer a:active {
+footer a:hover,footer address div a:hover , footer a em:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .nav-link:active, .navbar-dark .navbar-nav .nav-link:active, footer a:active {
   color: #fc561f;
 }
 
@@ -258,7 +278,9 @@ footer .row {
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) {
+
+ }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {

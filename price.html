@@ -50,71 +50,76 @@
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Les tarifs</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+  <main class="main">
+    <section class="mt-5 p-2">
+
+      <h2 class="text-center m-5">Les tarifs</h2>
+
+      <div class="widthTable m-auto">
+        <table class="table text-center">
+          <thead >
+            <tr>
+              <th scope="col">Nombre d'heures</th>
+              <th scope="col">Avant les réductions d'impôts de 50%</th>
+              <th scope="col">Après les réductions d'impôts de 50%</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 heure</th>
+              <td>45 euros</td>
+              <td>25 euros</td>
+            </tr>
+            <tr>
+              <th scope="row">2 heures</th>
+              <td>85 euros</td>
+              <td>45 euros</td>
+            </tr>
+            <tr>
+              <th scope="row">3 heures</th>
+              <td>110 euros</td>
+              <td>85 euros</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </section>
   </main>
 
   <footer class="bordersep container-fluid m-0 p-0">
-
+    <!-- Row bootstrap -->
     <div class="row p-0">
+
       <address class="text-center pt-4 col-md-6">
-        <h3 class="mb-4">Information</h3>
-        <div class="border border-white border-top-0 border-bottom-0 mr-5 ml-5">
-          <em>
-            <p>16 rue des Jardiniers</p>
-            <p>59810 Lesquin</p>
-            <a href="mailto:romain-goddu@g-mail.com">romain-goddu@g-mail.com</a></p>
-            <p>02 58 42 68 10</p>
-          </em>
+        <p class="mb-4 h3">Information</p>
+        <div class="border border-white border-top-0 border-bottom-0 mr-5 ml-5 d-flex flex-column">
+          <em>16 rue des Jardiniers</em>
+          <em>59810 Lesquin</em>
+          <a href="mailto:romain-goddu@g-mail.com"><em>romain-goddu@g-mail.com</em></a>
+          <em>02 58 42 68 10</em>
         </div>
       </address>
 
+      <!-- Horizontal line -->
       <div class="bordersep border-left-0 border-right-0 border-top-0 ml-3 mr-3 mt-4 mb-4 d-md-none">
       </div>
 
       <div class="pt-2 text-center col-md-6">
+
         <h3 class="reseau">Réseau sociaux</h3>
+
         <div class="reseau d-flex justify-content-around ml-4 mr-4">
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-twitter-square"></i></a>
           <a href="#"><i class="fab fa-google-plus-square"></i></a>
         </div>
+
       </div>
+
     </div>
 
-
+    <!-- Footer bottom -->
     <div class="bg-white">
       <p class="m-0 p-2 text-center"><i class="far fa-copyright"></i>julebbb</p>
     </div>
