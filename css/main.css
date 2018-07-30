@@ -100,10 +100,18 @@ textarea {
 body {
  color: #293540;
  background: url("../img/materiel-sportif-assombri.jpg") fixed center;
-
+ background-size: 100%;
 }
 
-h2 {
+em {
+  padding: 1em;
+}
+/*==========================================
+                Header
+============================================*/
+
+.header {
+  height: 100vh;
 }
 
 
@@ -111,34 +119,173 @@ h2 {
   background-color: #293540;
 }
 
+.navbar {
+  z-index: 999;
+}
+
 .navbar-dark .navbar-brand, footer, footer a, .navbar-dark .navbar-nav .nav-link {
   color: white;
   transition: 0.3s ease;
 }
 
-.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link:hover, footer p, footer a {
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link:hover, footer p, footer a, footer em {
   color: #7cbce2;
 }
 
-header > div:last-child {
+header > div:last-child img {
+  margin: auto;
+  display: block;
+  height: 100%;
+}
+
+header > div:last-child  {
   height: 100vh;
-  background: url("../img/running-woman.jpg");
-  background-size: 100%;
-  background-position: top;
+  overflow: hidden;
+  background: url("../img/dumbell.jpg") no-repeat;
+  background-position: left;
 }
 
-main section {
+/*==========================================
+                Main page
+============================================*/
+
+main {
+  overflow: hidden;
+}
+
+main h2, main h3 {
+  color: #fc561f;
+}
+
+main > section, main .row {
   background: rgb(225, 235, 245, 0.9);
-  /*color: white;
-  background:  rgb(252, 86, 31, 0.9);*/
 }
 
-footer p, footer a {
+/*==========================================
+                Index page
+============================================*/
+.carousel-inner {
+  height: 100vh;
+}
+.carousel-item img {
+  width: 100%;
+}
+
+main .indexDiv {
+  background: none;
+}
+
+.indexDiv section img {
+  max-height: 100%;
+align-self: center;
+}
+
+.indexDiv section div {
+  padding-top: 22px!important;
+  margin-top: 12px;
+}
+
+/*==========================================
+                Coach page
+============================================*/
+
+
+.items {
+  max-width: 500px;
+
+}
+
+.list-group-item {
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+  display: list-item;
+  background: none;
+}
+
+.diploma {
+  padding-top: 16px;
+}
+
+.coach {
+  max-width: 320px;
+  align-self: center;
+}
+/*==========================================
+                Price page
+============================================*/
+
+.table th, .table td{
+ height: 20vh;
+ border-top: 3px solid #fc561f;
+}
+
+.table th, .table td, .table thead th {
+  vertical-align: middle;
+
+}
+.widthTable {
+  max-width: 700px;
+}
+
+.table thead tr, .table tbody tr th {
+  background: rgb(225, 235, 245, 0.9);
+}
+
+/*==========================================
+                Contact page
+============================================*/
+
+.btn {
+  background: #fc561f;
+  color: white;
+  max-width: 200px;
+  margin: auto;
+}
+
+.btn:hover {
+  background: white;
+  color: #fc561f;
+
+}
+
+iframe {
+  height: 70vh;
+}
+
+.main {
+  max-width: 850px;
+  margin: auto;
+}
+
+.main .row {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#map {
+  margin: auto;
+  width:80%;
+  max-width: 800px;
+  min-width: 280px;
+  position: relative;
+  height: 50vh;
+}
+
+
+
+/*==========================================
+                Footer
+============================================*/
+footer em {
   font-size: 0.8rem;
+
+}
+footer address div a:hover , footer a em:hover {
+  text-decoration: none;
+
 }
 
-footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .nav-link:active, .navbar-dark .navbar-nav .nav-link:active, footer a:active {
-  text-decoration: none;
+footer a:hover,footer address div a:hover , footer a em:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .nav-link:active, .navbar-dark .navbar-nav .nav-link:active, footer a:active {
   color: #fc561f;
 }
 
@@ -150,8 +297,55 @@ footer a:hover, footer > div:last-child p, .navbar-dark .navbar-nav .active > .n
   border-top: 5px solid #fc561f !important;
 }
 
+footer .row {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+}
+
+/*==========================================
+                Responsive
+============================================*/
 
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+  main > div section:first-child {
+    padding-bottom: 10px;
+  }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .reseau {
+    padding-top: 1.1rem;
+  }
+
+  .main .row section:nth-child(2) {
+   margin-top: 48px;
+  }
+
+  .indexDiv section {
+    height: 300px;
+  }
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .indexDiv section {
+    height: 365px;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1000px;
+  }
+
+ }
 
 
 
