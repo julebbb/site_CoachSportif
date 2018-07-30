@@ -143,7 +143,6 @@ header > div:last-child  {
   overflow: hidden;
   background: url("../img/dumbell.jpg") no-repeat;
   background-position: left;
-  background-size: 100vw;
 }
 
 /*==========================================
@@ -165,9 +164,25 @@ main > section, main .row {
 /*==========================================
                 Index page
 ============================================*/
-
 .carousel-inner {
   height: 100vh;
+}
+.carousel-item img {
+  width: 100%;
+}
+
+main .indexDiv {
+  background: none;
+}
+
+.indexDiv section img {
+  max-height: 100%;
+align-self: center;
+}
+
+.indexDiv section div {
+  padding-top: 22px!important;
+  margin-top: 12px;
 }
 
 /*==========================================
@@ -247,9 +262,6 @@ iframe {
   padding-right: 15px;
 }
 
-
-
-
 #map {
   margin: auto;
   width:80%;
@@ -314,11 +326,17 @@ footer .row {
    margin-top: 48px;
   }
 
+  .indexDiv section {
+    height: 300px;
+  }
+
  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
+  .indexDiv section {
+    height: 365px;
+  }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -326,6 +344,7 @@ footer .row {
   .main {
     max-width: 1000px;
   }
+
  }
 
 
